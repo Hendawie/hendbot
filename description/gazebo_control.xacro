@@ -10,10 +10,18 @@
             <wheel_separation>0.45</wheel_separation>
             <wheel_diameter>0.15</wheel_diameter>
 
+            <!-- Flippers Information -->
+            <flipper_joint_left>left_flipper_joint</flipper_joint_left>
+            <flipper_joint_right>right_flipper_joint</flipper_joint_right>
+            <flipper_separation>0.65</flipper_separation>
+            <flipper_length>0.4</flipper_length>
+
 
             <!-- Limits -->
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
+            <max_flipper_torque>50</max_flipper_torque>
+            <max_flipper_angle>1.57</max_flipper_angle>
 
             
             <!-- Output -->
