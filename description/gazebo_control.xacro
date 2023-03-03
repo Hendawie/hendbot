@@ -11,8 +11,8 @@
             <wheel_diameter>0.15</wheel_diameter>
 
             <!-- Flippers Information -->
-            <flipper_joint_left>left_flipper_joint</flipper_joint_left>
-            <flipper_joint_right>right_flipper_joint</flipper_joint_right>
+            <flipper_joint_left>left_flibber_wheel_joint</flipper_joint_left>
+            <flipper_joint_right>right_flibber_wheel_joint</flipper_joint_right>
             <flipper_separation>0.65</flipper_separation>
             <flipper_length>0.4</flipper_length>
 
@@ -31,7 +31,8 @@
             <publish_odom>true</publish_odom>
             <publish_odom_tf>true</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
-
+            <publish_flipper_tf>true</publish_flipper_tf>
+            
         </plugin>
     </gazebo>
 

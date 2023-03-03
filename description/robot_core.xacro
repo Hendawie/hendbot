@@ -196,79 +196,81 @@
     <!-- RIGHT FLIBER WHEEL LINK -->
 
     <joint name="right_flibber_wheel_joint" type="revolute">
-        <parent link="right_font_wheel" />
-        <child link="right_flibber_wheel" />
-        <axis xyz="0 1 0" />
-        <limit lower="0" upper="${pi}" effort="100" velocity="100"/>
+        <origin xyz="-0.075 0 0.1" rpy="0 0 0"/>
+        <parent link="right_font_wheel"/>
+        <child link="right_flibber_wheel"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/> 
     </joint>
 
     <xacro:property name="arm_length" value="0.4" />
-    <xacro:property name="arm_H" value="0.1" />
-    <xacro:property name="arm_W" value="0.1" />
-    <xacro:property name="arm_radius" value="0.15" />
+    <xacro:property name="arm_radius" value="0.075" />
 
     <link name="right_flibber_wheel">
         <visual>
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi} 0" />
-            <geometry>
-                <box size="${arm_length} ${arm_H} ${arm_W}" />
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry>                
+                <cylinder length="${arm_length}" radius="${arm_radius}" />
             </geometry>
-            <material name="blue" />
+            <material name="orange" />
         </visual>
         <collision>
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
             <geometry>
-                <box size="${arm_length} ${arm_H} ${arm_W}" />
+                <cylinder length="${arm_length}" radius="${arm_radius}" />
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.1" length="${arm_length}" radius="${arm_radius}">
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi} 0" />
+        <xacro:inertial_cylinder mass="1.0" length="${arm_length}" radius="${arm_radius}">
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
         </xacro:inertial_cylinder>
     </link>
 
     <gazebo reference="right_flibber_wheel">
         <material>Gazebo/Black</material>
-        <mu1 value="0.001" />
-        <mu2 value="0.001" />
     </gazebo>
 
 
     <!-- LEFT FLIBBER WHEEL LINK -->
 
-    <joint name="left_flibber_wheel_joint" type="revolute">
-        <parent link="left_font_wheel" />
-        <child link="left_flibber_wheel" />
-        <origin xyz="${arm_length} 0 0" rpy="0 -${pi} 0" />
-        <axis xyz="0 -1 0" />
-        <limit lower="0" upper="${pi}" effort="100" velocity="100"/>
+   <joint name="left_flibber_wheel_joint" type="revolute">
+        <origin xyz="-0.075 0 0.1" rpy="0 0 0"/>
+        <parent link="left_font_wheel"/>
+        <child link="left_flibber_wheel"/>
+        <axis xyz="0 0 -1"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/> 
     </joint>
+
+    <xacro:property name="arm_length" value="0.4" />
+    <xacro:property name="arm_radius" value="0.075" />
 
     <link name="left_flibber_wheel">
         <visual>
-            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi} 0" />
-            <geometry>
-                 <box size="${arm_length} ${arm_H} ${arm_W}" />
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry>                
+                <cylinder length="${arm_length}" radius="${arm_radius}" />
             </geometry>
-            <material name="blue" />
+            <material name="orange" />
         </visual>
         <collision>
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
             <geometry>
-                 <box size="${arm_length} ${arm_H} ${arm_W}" />
+                <cylinder length="${arm_length}" radius="${arm_radius}" />
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.1" length="${arm_length}" radius="${arm_radius}">
-            <origin xyz="0 0 0" rpy="0 0 0" />
+        <xacro:inertial_cylinder mass="1.0" length="${arm_length}" radius="${arm_radius}">
+            <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
         </xacro:inertial_cylinder>
     </link>
 
     <gazebo reference="left_flibber_wheel">
         <material>Gazebo/Black</material>
-        <mu1 value="0.001" />
-        <mu2 value="0.001" />
     </gazebo>
+
+
 
     <!-- LEFT TRACK-->
 
-    <!-- <joint name="left_track_joint" type="fixed">
+    <joint name="left_track_joint" type="fixed">
         <parent link="base_link" />
         <child link="left_track_wheel" />
         <origin xyz="0.23 0.225 0" rpy="0 0 0" />
@@ -296,12 +298,12 @@
         <material>Gazebo/Orange</material>
         <mu1 value="0.001" />
         <mu2 value="0.001" />
-    </gazebo> -->
+    </gazebo>
 
 
     <!-- RIGHT TRACK-->
 
-    <!-- <joint name="right_track_joint" type="fixed">
+    <joint name="right_track_joint" type="fixed">
         <parent link="base_link" />
         <child link="right_track_wheel" />
         <origin xyz="0.23 -0.225 0" rpy="0 0 0" />
@@ -329,7 +331,7 @@
         <material>Gazebo/Orange</material>
         <mu1 value="0.001" />
         <mu2 value="0.001" />
-    </gazebo> -->
+    </gazebo>
 
 
 </robot>

@@ -81,18 +81,16 @@ Visualization Manager:
             {}
           chassis:
             {}
-          left_flibber_wheel:
-            {}
           left_font_wheel:
-            {}
+            left_flibber_wheel:
+              {}
           left_track_wheel:
             {}
           left_wheel:
             {}
-          right_flibber_wheel:
-            {}
           right_font_wheel:
-            {}
+            right_flibber_wheel:
+              {}
           right_track_wheel:
             {}
           right_wheel:
@@ -218,7 +216,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.1647839546203613
+      Distance: 4.18997049331665
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -233,10 +231,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9497964382171631
+      Pitch: 0.8897977471351624
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.840390205383301
+      Yaw: 0.032194145023822784
     Saved: ~
 Window Geometry:
   Displays:
