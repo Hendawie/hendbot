@@ -1,0 +1,570 @@
+<sdf version='1.7'>
+  <model name='hendbot'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.002987 -0 0.082641 0 -0 0</pose>
+        <mass>54.8089</mass>
+        <inertia>
+          <ixx>1.31145</ixx>
+          <ixy>-1.29347e-07</ixy>
+          <ixz>-0.0106587</ixz>
+          <iyy>2.666</iyy>
+          <iyz>1.97052e-07</iyz>
+          <izz>3.62598</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__hend_link_collision'>
+        <pose>-0.33246 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__LBW_Link_collision_1'>
+        <pose>-0.28246 0.215 0.035 1.5708 -1.1717 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LBW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__LFW_Link_collision_2'>
+        <pose>0.28245 0.215 0.035103 1.5708 0.76776 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__RBW_Link_collision_3'>
+        <pose>-0.28246 -0.215 0.035 -1.5708 0.11175 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RBW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__RFW_Link_collision_4'>
+        <pose>0.28245 -0.215 0.035103 1.5708 0.34292 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__hend_link_visual'>
+        <pose>-0.33246 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__LBW_Link_visual_1'>
+        <pose>-0.28246 0.215 0.035 1.5708 -1.1717 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LBW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__LFW_Link_visual_2'>
+        <pose>0.28245 0.215 0.035103 1.5708 0.76776 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__RBW_Link_visual_3'>
+        <pose>-0.28246 -0.215 0.035 -1.5708 0.11175 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RBW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__RFW_Link_visual_4'>
+        <pose>0.28245 -0.215 0.035103 1.5708 0.34292 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='WLBelt_Joint' type='revolute'>
+      <pose relative_to='base_link'>4e-05 0.215 0.035052 1.5708 0.35384 3.14159</pose>
+      <parent>base_link</parent>
+      <child>WLBelt_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WLBelt_Link'>
+      <pose relative_to='WLBelt_Joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>6e-06 2e-06 0.03 0 -0 0</pose>
+        <mass>2.8302</mass>
+        <inertia>
+          <ixx>0.00487432</ixx>
+          <ixy>1.0842e-19</ixy>
+          <ixz>-5.95761e-21</ixz>
+          <iyy>0.00487432</iyy>
+          <iyz>-3.72125e-22</iyz>
+          <izz>0.00805052</izz>
+        </inertia>
+      </inertial>
+      <collision name='WLBelt_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/WLBelt_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WLBelt_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/WLBelt_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='WRBelt_Joint' type='revolute'>
+      <pose relative_to='base_link'>4e-05 -0.215 0.035052 -1.5708 0.65732 0</pose>
+      <parent>base_link</parent>
+      <child>WRBelt_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='WRBelt_Link'>
+      <pose relative_to='WRBelt_Joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-5e-06 4e-06 -0.03 0 -0 0</pose>
+        <mass>2.8302</mass>
+        <inertia>
+          <ixx>0.00487432</ixx>
+          <ixy>2.1684e-19</ixy>
+          <ixz>9.79617e-36</ixz>
+          <iyy>0.00487432</iyy>
+          <iyz>7.94184e-36</iyz>
+          <izz>0.00805052</izz>
+        </inertia>
+      </inertial>
+      <collision name='WRBelt_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/WRBelt_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='WRBelt_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/WRBelt_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='LFFW_Joint' type='revolute'>
+      <pose relative_to='base_link'>0.28245 0.30998 0.035103 1.5708 -1.005 -3.14159</pose>
+      <parent>base_link</parent>
+      <child>LFFW_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='LFFW_Link'>
+      <pose relative_to='LFFW_Joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.016199 0.044173 0.030887 0 -0 0</pose>
+        <mass>3.50118</mass>
+        <inertia>
+          <ixx>0.0402368</ixx>
+          <ixy>0.0126939</ixy>
+          <ixz>-6.84372e-05</ixz>
+          <iyy>0.0103212</iyy>
+          <iyz>0.00018326</iyz>
+          <izz>0.0481955</izz>
+        </inertia>
+      </inertial>
+      <collision name='LFFW_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LFFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='LFFW_Link_fixed_joint_lump__LF_Link_collision_1'>
+        <pose>0 0 0 0 -0 1.91705</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LF_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='LFFW_Link_fixed_joint_lump__LW_Link_collision_2'>
+        <pose>-0.103425 0.281385 0 0 0 -2.57584</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='LFFW_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LFFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='LFFW_Link_fixed_joint_lump__LF_Link_visual_1'>
+        <pose>0 0 0 0 -0 1.91705</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LF_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='LFFW_Link_fixed_joint_lump__LW_Link_visual_2'>
+        <pose>-0.103425 0.281385 0 0 0 -2.57584</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/LW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='RFFW_Joint' type='revolute'>
+      <pose relative_to='base_link'>0.28245 -0.31 0.035103 -1.5708 -0.76747 0</pose>
+      <parent>base_link</parent>
+      <child>RFFW_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RFFW_Link'>
+      <pose relative_to='RFFW_Joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.041307 0.022524 -0.030886 0 -0 0</pose>
+        <mass>3.50118</mass>
+        <inertia>
+          <ixx>0.0146412</ixx>
+          <ixy>-0.0164836</ixy>
+          <ixz>-0.000172565</ixz>
+          <iyy>0.0359161</iyy>
+          <iyz>-9.27813e-05</iyz>
+          <izz>0.0481951</izz>
+        </inertia>
+      </inertial>
+      <collision name='RFFW_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RFFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='RFFW_Link_fixed_joint_lump__RF_Link_collision_1'>
+        <pose>0 0.01 0 0 -0 0.504452</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RF_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='RFFW_Link_fixed_joint_lump__RW_Link_collision_2'>
+        <pose>0.263308 0.143325 0 0 0 -0.803348</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.1</mu>
+              <mu2>0.1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='RFFW_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RFFW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='RFFW_Link_fixed_joint_lump__RF_Link_visual_1'>
+        <pose>0 0.01 0 0 -0 0.504452</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RF_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='RFFW_Link_fixed_joint_lump__RW_Link_visual_2'>
+        <pose>0.263308 0.143325 0 0 0 -0.803348</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://hendbot/meshes/RW_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
