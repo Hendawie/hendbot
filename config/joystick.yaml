@@ -5,7 +5,7 @@ joy_node:
     deadzone: 0.05
     autorepeat_rate: 20.0
 
-teleop_node:
+Kendall_node:
   ros__parameters:
     
     axis_linear:  # Left thumb stick vertical
