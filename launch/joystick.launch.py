@@ -17,12 +17,12 @@ def generate_launch_description():
             parameters=[joy_params, {'use_sim_time': use_sim_time}],
          )
 
-    teleop_node = Node(
+    Kendall_node = Node(
             package='teleop_twist_joy',
             executable='teleop_node',
             name='teleop_node',
             parameters=[joy_params, {'use_sim_time': use_sim_time}],
-            remappings=[('/cmd_vel','/diff_cont/cmd_vel_unstamped')]
+            remappings=[('/cmd_vel','/Kendall/cmd_vel_unstamped')]
          )
 
     kylie_node = Node(
@@ -48,7 +48,7 @@ def generate_launch_description():
             default_value='false',
             description='Use sim time if true'),
         joy_node,
-        teleop_node,
-        kylie_node,
+        Kendall_node,
+        kylie_node, 
         #twist_stamper       
     ])

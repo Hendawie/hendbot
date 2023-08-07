@@ -45,7 +45,7 @@ def generate_launch_description():
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner.py",
-        arguments=["diff_cont"],
+        arguments=["Kendall"],
     )
 
     joint_broad_spawner = Node(
