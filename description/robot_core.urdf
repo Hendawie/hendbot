@@ -33,7 +33,7 @@
   <link name="hend_link">
     <inertial>
       <origin rpy="0 0 0" xyz="0.328696423253543 -2.60874698367187E-17 0.0950289066631501"/>
-      <mass value="43.4880454963273"/>
+      <mass value="430.4880454963273"/>
       <inertia ixx="0.580105726031867" ixy="4.51081599921307E-16" ixz="-0.0125188942101638" iyy="1.698173281021" iyz="1.45266351536115E-16" izz="2.0236419336975"/>
     </inertial>
     <visual>
@@ -92,8 +92,8 @@
   </joint>
   <gazebo reference="RBW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="LBW_Link">
     <inertial>
@@ -127,8 +127,8 @@
   </joint>
   <gazebo reference="LBW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="WRBelt_Link">
     <inertial>
@@ -228,8 +228,8 @@
   </joint>
   <gazebo reference="RFW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="LFW_Link">
     <inertial>
@@ -263,8 +263,8 @@
   </joint>
   <gazebo reference="LFW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="RFFW_Link">
     <inertial>
@@ -298,8 +298,8 @@
   </joint>
   <gazebo reference="RFFW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="RF_Link">
     <inertial>
@@ -362,8 +362,8 @@
   </joint>
   <gazebo reference="RW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="LFFW_Link">
     <inertial>
@@ -397,8 +397,8 @@
   </joint>
   <gazebo reference="LFFW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
   <link name="LF_Link">
     <inertial>
@@ -460,7 +460,7 @@
   </joint>
   <gazebo reference="LW_Link">
     <material>Gazebo/Orange</material>
-    <mu1 value="0.1"/>
-    <mu2 value="0.1"/>
+    <mu1 value="0.04"/>
+    <mu2 value="0.04"/>
   </gazebo>
 </robot>

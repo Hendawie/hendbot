@@ -2,15 +2,15 @@
   <model name='hendbot'>
     <link name='base_link'>
       <inertial>
-        <pose>-0.002987 -0 0.082641 0 -0 0</pose>
-        <mass>54.8089</mass>
+        <pose>-0.003667 -0 0.093492 0 -0 0</pose>
+        <mass>441.809</mass>
         <inertia>
-          <ixx>1.31145</ixx>
+          <ixx>1.31882</ixx>
           <ixy>-1.29347e-07</ixy>
-          <ixz>-0.0106587</ixz>
-          <iyy>2.666</iyy>
+          <ixz>-0.0101969</ixz>
+          <iyy>2.6734</iyy>
           <iyz>1.97052e-07</iyz>
-          <izz>3.62598</izz>
+          <izz>3.62601</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__hend_link_collision'>
@@ -44,8 +44,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -64,8 +64,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -84,8 +84,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -104,8 +104,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -368,8 +368,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -397,8 +397,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -491,8 +491,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
@@ -520,8 +520,8 @@
           </contact>
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.04</mu>
+              <mu2>0.04</mu2>
             </ode>
           </friction>
         </surface>
