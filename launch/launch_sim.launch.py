@@ -42,10 +42,16 @@ def generate_launch_description():
                         output='screen')
 
 
-    diff_drive_spawner = Node(
+    Kendall_diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner.py",
         arguments=["Kendall"],
+    )
+
+    kylie_diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner.py",
+        arguments=["kylie"],
     )
 
     joint_broad_spawner = Node(
@@ -78,6 +84,7 @@ def generate_launch_description():
         rsp,
         gazebo,
         spawn_entity,
-        diff_drive_spawner,
+        Kendall_diff_drive_spawner,
+        kylie_diff_drive_spawner,
         joint_broad_spawner
     ])
