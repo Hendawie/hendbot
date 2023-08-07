@@ -6,7 +6,7 @@ controller_manager:
     kylie:
       type: diff_drive_controller/DiffDriveController
 
-    diff_cont:
+    Kendall:
       type: diff_drive_controller/DiffDriveController
     
     joint_broad:
@@ -27,7 +27,7 @@ kylie:
 
     use_stamped_vel: false
 
-diff_cont:
+Kendall:
   ros__parameters:
 
     publish_rate: 50.0

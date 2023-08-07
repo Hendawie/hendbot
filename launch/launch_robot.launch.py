@@ -42,16 +42,16 @@ def generate_launch_description():
 
     delayed_controller_manager = TimerAction(period=3.0, actions=[controller_manager])
 
-    diff_drive_spawner = Node(
+    Kendall_diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner.py",
-        arguments=["diff_cont"],
+        arguments=["Kendall"],
     )
 
-    delayed_diff_drive_spawner = RegisterEventHandler(
+    Kendall_delayed_diff_drive_spawner = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=controller_manager,
-            on_start=[diff_drive_spawner],
+            on_start=[Kendall_diff_drive_spawner],
         )
     )
 
@@ -86,7 +86,7 @@ def generate_launch_description():
         rsp,
         # joystick,
         delayed_controller_manager,
-        delayed_diff_drive_spawner,
+        Kendall_delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
         kylie_delayed_diff_drive_spawner
     ])
