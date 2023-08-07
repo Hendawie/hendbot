@@ -52,7 +52,7 @@ def generate_launch_description():
         package="controller_manager",
         executable="spawner.py",
         arguments=["kylie"],
-    )
+    ) 
 
     joint_broad_spawner = Node(
         package="controller_manager",
