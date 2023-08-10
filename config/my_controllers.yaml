@@ -26,6 +26,7 @@ kylie:
     wheel_radius: 0.085
 
     use_stamped_vel: false
+    open_loop: true 
 
 Kendall:
   ros__parameters:
@@ -40,7 +41,6 @@ Kendall:
     wheel_radius: 0.085
 
     use_stamped_vel: false
-
 
     # open_loop: false    
 
