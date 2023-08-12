@@ -1,7 +1,6 @@
 controller_manager:
   ros__parameters:
     update_rate: 30
-    #use_sim_time: true
 
     kylie:
       type: diff_drive_controller/DiffDriveController
@@ -12,35 +11,29 @@ controller_manager:
     joint_broad:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-
 kylie:
   ros__parameters:
-
     publish_rate: 50.0
-
-    odom_frame_id: base_link
-
     left_wheel_names: ['LFFW_Joint']
     right_wheel_names: ['RFFW_Joint']
     wheel_separation: 0.43
     wheel_radius: 0.085
-
     use_stamped_vel: false
-    open_loop: true 
+    linear.x.has_velocity_limits: true
+    linear.x.max_velocity: 0.0
+    angular.z.has_velocity_limits: true
+    angular.z.max_velocity: 0.0
 
 Kendall:
   ros__parameters:
-
     publish_rate: 50.0
-
     base_frame_id: base_link
-
     left_wheel_names: ['WLBelt_Joint']
     right_wheel_names: ['WRBelt_Joint']
     wheel_separation: 0.43
     wheel_radius: 0.085
-
     use_stamped_vel: false
+    # Add any necessary parameters for Kendall to control movement
 
     # open_loop: false    
 
